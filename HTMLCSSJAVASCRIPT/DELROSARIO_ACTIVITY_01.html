@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <title>Document</title>
+  <style>
+    *{
+    font-family:'Courier New', Courier, monospace;
+}
+body{
+    margin:0;
+    padding:0;
+}
+
+.navbar ul{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    background-color:#333;
+}
+.navbar ul li{
+float:left;
+}
+.navbar ul li a {
+    text-decoration:none;
+    display:block;
+    padding:14px 16px;
+    text-align:center;
+    color:white;
+
+}
+.navbar ul li a:hover:not(.active){
+    background-color:#111;
+    cursor:pointer;
+}
+.active{
+    background-color:BLUE;
+}
+
+@media screen and (max-width: 500px) {
+    body{
+        background-color:#333;
+    }
+    .navbar ul li{
+        float:none;
+    }
+    .navbar ul li a {
+        text-decoration:none;
+        display:block;
+        padding:14px 16px;
+        text-align:center;
+        color:white;
+    }
+    .navbar ul li a:hover:not(.active){
+        background-color:white;
+        cursor:pointer;
+        color:black;
+    }
+}
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="navbar">
+      <ul>
+        
+        <li><a href="" class="active"><i class="fa fa-fw fa-home"></i>HOME</a></li>
+        <li><a href=""><i class="fa-sharp fa-solid fa-heart"></i>UPDATES</a></li>
+        <li><a href=""><i class="fa-sharp fa-solid fa-calendar-days"></i>CALENDAR</a></li>
+        <li><a href=""><i class="fa fa-fw fa-user"></i>CONTACTS</a></li>
+      </ul>
+    </div>
+  </nav>
+  <article>
+    <h1>Responsive Navigation Bar with Icons</h1>
+    <p>Try to resize the browser window to see the responsive effect.</p>
+  </article>
+</body>
+</html>

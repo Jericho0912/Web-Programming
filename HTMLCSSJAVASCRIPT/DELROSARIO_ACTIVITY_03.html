@@ -1,0 +1,105 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+</head>
+<style>
+    body, html{
+        height:100%;
+        font-family:Arial, Arial, Helvetica, sans-serif;
+        margin:0;
+        padding:0;
+
+    }
+    body{
+        background-color:blue;
+        animation-name:gradient;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+
+    
+    }
+    @keyframes gradient{
+        0%{background-color:#194569;}
+        20%{background-color:#5f84A2;}
+        40%{background-color:#91aec4;}
+        60%{background-color:#B7D0e1;}
+        80%{background-color:#CADEED;}
+        100%{background-color:#194569;}
+    }
+
+    *{
+        box-sizing:border-box;
+    }
+    .bg-im{
+        background-image:;
+        min-height:380px;
+
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size:cover;
+        position:relative;
+    }
+    .container{
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        max-width:500px;
+        padding:16px;
+        background-color:#03045e;
+        border:1px solid black;
+        border-radius:20px;
+        color:white;
+
+    }
+    input[type=text], input[type=password]{
+        width:100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        border:none;
+        background:#f1f1f1;
+
+    }
+    input[type=text]:focus, input[type=password]:focus{
+        background-color:#ddd;
+        outline:none;
+    }
+    .btn{
+        background-color:#90e0ef;
+        color:black;
+        padding: 16px 20px;
+        border:none;
+        cursor:pointer;
+        width:100%;
+        opacity:0.9;
+
+    }
+    .btn:hover{
+        opacity:1;
+    }
+    .container h1{
+        text-align:center;
+    }
+    h1{
+        text-align:center;
+    }
+    </style>
+<body>
+    <div class="bg-img">
+        <form action="/action_page.php" class="container">
+            <h1>Login</h1>
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+            <br>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+            <br>
+            <button type="submit" class="btn">Login</button>
+        </form>
+    </div>
+</body>
+</html>
